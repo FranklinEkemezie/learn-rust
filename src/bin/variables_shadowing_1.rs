@@ -6,10 +6,9 @@ fn main() {
     x = 7;
 
     // Shadowing and re-binding
-    let x = x;
     x += 3;
 
-    let y = 4;
+    let y: i32 = 4;
     // Shadowing
     let y = "I can also be bound to text!";
 
