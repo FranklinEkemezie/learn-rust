@@ -1,3 +1,4 @@
+#[allow(unused_variables)]
 
 // fix warning (do not use the _ prefix method)
 
