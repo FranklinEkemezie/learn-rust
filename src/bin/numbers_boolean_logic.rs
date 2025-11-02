@@ -4,9 +4,9 @@
 fn main() {
 
     // Short-circuiting boolean logic
-    assert!(true && false == __);
-    assert!(true || false == __);
-    assert!(!true == __);
+    assert!(true && false == false);
+    assert!(true || false == true);
+    assert!(!true == false);
 
     // Bitwise operations
     println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
