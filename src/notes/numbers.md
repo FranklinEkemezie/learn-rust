@@ -46,4 +46,93 @@ will read at any time.
 - `f64` - size of 64 bits.
 - Representation according to IEEE-754 specification.
 
+## Boolean Logic
+- Boolean logic deals with values that are either "true" or "false" (or 1 and 0).
+- Three basic operations: AND, OR, NOT.
+
+### Truth Table AND
+| A     |   B   | Result |
+|-------|:-----:|:------:|
+| false | false | false  |
+| false | true  | false  |
+| true  | false | false  |
+| true  | true  |  true  |
+
+### Truth Table OR
+| A     |   B   | Result |
+|-------|:-----:|:------:|
+| false | false | false  |
+| false | true  |  true  |
+| true  | false |  true  |
+| true  | true  |  true  |
+
+### Truth Table NOT
+| A       | Result |
+|---------|:------:|
+| ! false |  true  |
+| ! true  | false  |
+
+## Bitwise Operations
+- Operations that manipulate individual bits that make up a binary number.
+- Treating each bit of a binary number as a separate unit and perform logical operations on them.
+- Bitwise operations include: AND, OR, XOR, bitwise shifting.
+
+# AND (&)
+**AND** returns 1 only when **both** of its input are 1.
+
+| A | B | Q |
+|---|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 0 |
+
+# OR (|)
+**OR** returns 1 if **at least** one of its inputs is 1. 
+If both inputs are 0, the output will also be 0.
+
+| A | B | Q |
+|---|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+# XOR (^)
+**XOR** or (exclusive OR) returns 1 if the inputs are **different** 
+and 0 if the inputs are the **same**.
+
+| A | B | Q |
+|---|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+# Bitwise Left Shift
+
+Ex: To perform `1 << 5`
+
+*Solution*
+
+1 `->` 0000_0001
+
+Now, shift all the bits to the left 5 times, we get:
+`=>` `0010_0000`
+which is 32.
+
+# Bitwise Right Shift
+
+Ex: To perform `0x80 >> 2`
+
+*Solution*
+
+Here, `0x80` is the same as `128` in decimal.
+
+128 `->` 1000_0000
+
+Now, shift all the bits to the right 5 times, we get:
+`=>` `0010_0000`
+which is 32 (or `0x20` in octal).
+
 
