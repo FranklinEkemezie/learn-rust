@@ -3,7 +3,7 @@
 // Goal: Modify `assert_eq!` to make it work
 
 fn main() {
-    let x = 5;
+    let x: u32 = 5;
     assert_eq!("u32".to_string(), type_of(&x));
 
     println!("Success!");
