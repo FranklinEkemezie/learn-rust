@@ -3,7 +3,10 @@
 
 fn main () {
 
-    let c1 = "ϕ";
+    // In rust, double quotes are for string literals,
+    // while single quotes must be used for character literals.
+
+    let c1 = 'ϕ';
     print_char(c1);
 }
 
