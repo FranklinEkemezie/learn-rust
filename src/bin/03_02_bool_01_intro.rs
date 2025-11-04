@@ -6,7 +6,7 @@ fn main() {
     let _f: bool = false;
 
     let t = true;
-    if !t {
+    if t {
         println!("Success!");
     }
 }
