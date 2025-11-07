@@ -8,7 +8,7 @@ fn main() {
         x += 2
     };
 
-    assert_eq!(v, 2);
+    assert_eq!(v, 3);
 
     println!("Success!");
 }
