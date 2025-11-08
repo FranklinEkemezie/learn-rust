@@ -19,5 +19,5 @@ fn get_option(tp: u8) -> Option<i32> {
 
 // IMPLEMENT this function in THREE ways
 fn never_return_fn() -> ! {
-    unimplemented!() // method 2: use unimplemented! macro. Used when the function is yet to be implemented.
+    todo!() // method 3: use unimplemented! macro. To indicate unfinished code.
 }
