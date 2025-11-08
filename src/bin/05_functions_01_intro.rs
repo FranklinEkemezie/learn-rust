@@ -10,6 +10,7 @@ fn main() {
     println!("Success!");
 }
 
-fn sum(x, y: i32) {
-    x + y;
+// Functions must always have their type annotated
+fn sum(x: i32, y: i32) -> i32 {
+    x + y
 }
