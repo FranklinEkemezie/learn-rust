@@ -7,6 +7,6 @@ fn main () {
 }
 
 // Replace i32 with another type
-fn print() -> i32 {
+fn print() { // we can also annotate the type explicitly to be the unit type
     println!("Success!");
 }
