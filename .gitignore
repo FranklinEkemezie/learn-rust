@@ -1,1 +1,6 @@
 /target
+
+# Build files
+**/*.exe
+**/*.pdb
+**/*.d
