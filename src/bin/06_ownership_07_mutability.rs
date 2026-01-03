@@ -3,7 +3,7 @@ fn main() {
 
     let x = Box::new(5);
 
-    let ...     // implement this line, dont change other lines!
+    let mut y: Box<i32> = Box::new(1);     // implement this line, don't change other lines!
 
     *y = 4;
 
