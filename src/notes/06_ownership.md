@@ -47,7 +47,7 @@ In the code snippet above:
 
 ## Memory
 
-To understand ownership in Rust, you must understand how data is stored in 
+To understand ownership in Rust, you must understand how data is stored in
 the computer memory.
 
 - Component in a computer to store data and instructions for the processor to execute.
@@ -70,7 +70,7 @@ the computer memory.
 
 #### The String Type
 
-All types covered so far were fixed size, and thus, are stored in the stack. 
+All types covered so far were fixed size, and thus, are stored in the stack.
 The `String` type is used to store texts.
 
 - `String` is mutable
@@ -78,14 +78,14 @@ The `String` type is used to store texts.
 - `String` stored on the stack with a pointer to the heap
 - Value of `String` is stored on the heap
 
-*NB*: A pointer in Rust takes up **24 bytes**, which is **8 bytes** (`usize`) each for the 
-`ptr` for the memory address value, `len` for the length (of the string), and 
+*NB*: A pointer in Rust takes up **24 bytes**, which is **8 bytes** (`usize`) each for the
+`ptr` for the memory address value, `len` for the length (of the string), and
 `capacity` for the capacity.
 
 ## Copy Vs. Move
 
-- Scalar values with fixed sizes (all types we covered at the beginning) will automatically get copied in the stack, 
-copying here is cheap.
+- Scalar values with fixed sizes (all types we covered at the beginning) will automatically get copied in the stack,
+  copying here is cheap.
 - Dynamically sized data won't get copied, but moved, copying would be too expensive.
 
 ```rust
@@ -108,8 +108,8 @@ fn main() {
 In the code snippet above:
 - y and x are stored in a different location, but the value is copied over to `y`
 - here the pointer is copied, since it is of fixed size. This means that both `s1` and `s2`
-will now point to the same memory location while the value (which is has varying size)
-still retains it's location.
+  will now point to the same memory location while the value (which is has varying size)
+  still retains it's location.
 
 The implication is that this would **violate the second rule** which states that there can only
 be **ONE owner** at a time. To prevent this, the first variable `s1` will be `dropped` and cannot
@@ -163,7 +163,7 @@ fn makes_copy(some_integer: i32) {          // some_integer comes into scope
 
 ```
 
-In the following snippets, we can see that we can return the value to the 
+In the following snippets, we can see that we can return the value to the
 caller:
 
 ```rust
