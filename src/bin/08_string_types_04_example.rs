@@ -1,10 +1,10 @@
 
 // Fix all errors without adding newline
 fn main() {
-    let s: String = String::from("hello");
+    let mut s: String = String::from("hello");
     s.push(',');
-    s.push(" world");
-    s += "!".to_string();
+    s.push_str(" world");
+    s += "!";
 
     println!("{}", s);
 }
