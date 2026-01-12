@@ -8,7 +8,7 @@ fn main() {
 
     let r1 = &c;
     // Fill the blank, don't change other code
-    let __ r2 = c;
+    let ref r2 = c;
 
     assert_eq!(*r1, *r2);
 
