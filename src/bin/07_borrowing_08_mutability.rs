@@ -2,7 +2,7 @@
 fn main() {
 
     // Fix error modifying this line
-    let s = String::from("hello, ");
+    let mut s = String::from("hello, ");
 
     borrow_object(&mut s);
 
