@@ -1,7 +1,7 @@
 
 // Fill in the blank
 fn main() {
-    let mut s = __;
+    let mut s = String::from("");
     s.push_str("hello, world");
     s.push('!');
 
