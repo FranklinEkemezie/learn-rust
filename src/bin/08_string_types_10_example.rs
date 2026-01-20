@@ -1,7 +1,7 @@
 
 /* Fill in the blank and fix the errors */
 fn main() {
-    let raw_str = r"Escapes don't work here: \x3F \u{211D}";
+    let raw_str = "Escapes don't work here: \x3F \u{211D}";
     // Modify above line to make it work
     assert_eq!(raw_str, "Escapes don't work here: ? ℝ");
 
@@ -15,7 +15,7 @@ fn main() {
     println!("{}", delimiter);
 
     // Fill the blank
-    let long_delimiter = __;
+    let long_delimiter = "Hello, \"##\"";
     assert_eq!(long_delimiter, "Hello, \"##\"");
 
     println!("Success!");
