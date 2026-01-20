@@ -2,7 +2,9 @@
 // Fix error with at least two solutions
 fn main() {
     let s = "hello, world";
-    greetings(s)
+    // another way is to use:
+    // String::from(s)
+    greetings(s.to_string())
 
 }
 
