@@ -1,7 +1,7 @@
 fn main() {
     // You can use escapes to write bytes by their hexadecimal values
     // Fill the blank below to show "I'm writing Rust"
-    let byte_escape = "I'm writing Ru\x73\x__!";
+    let byte_escape = "I'm writing Ru\x73\x74!";
     println!("What are you doing\x3F (\\x3F means ?) {}", byte_escape);
 
     // ...Or Unicode code points.
